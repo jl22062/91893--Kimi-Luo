@@ -1,5 +1,20 @@
+body{
+    background-color: rgb(252,252,252);
+}
+
 header{
-    position: sticky;
+    position: absolute;
+    height: 25px;
+    width: 100%;
+    background-color: #9C9EFF;
     top: 0px;
-    background-color: #a0a2ff;
+    left: 0px;
+}
+
+.flex-container{
+    position: absolute;
+    display: flexbox;
+    height: 100%;
+    width: 100%;
+    background-color: black;
 }
