@@ -3,6 +3,8 @@ body{
     margin: 0 auto;
 }
 
+/* Header Section */
+
 header{
     display: flex;
     flex-direction: row;
@@ -10,32 +12,64 @@ header{
     width: 1500px;
     background-color: #9C9EFF;
     margin: 0 auto;
+    align-items: center;
 }
+
+.iconImage{
+    height: 100px;
+    padding-left: 150px;
+    padding-right: 550px;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    padding-right:250px;
+}
+
+.new, .history, .help {
+    font-family: 'Kantumruy Pro';
+    font-size: 60px;
+    padding: 20px;
+}
+/* Header Section */
+
+/* Webpage main */
 
 .container{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 510px;
-  background-color: pink;
-
+  height: 500px;
 }
 
-.NavBar{
-    background-color: #9C9EFF;
+.NavBar {
+    display: flex;
+    align-items: center;
+    background: #9C9EFF;
     color: white;
     width: 1080px;
-    height: 60px;
-    border-radius: 25px;
+    max-width: 1080px;
+    height: 80px;
+    border-radius: 45px;
+    font-size: 60px;
+    padding: 0 20px; 
+    color: black;
+    overflow: hidden;
+    caret-color: transparent;
+}
+.NavBar:focus {
+    outline: 5px solid black; 
 }
 
 .textLogo{
     font-size: large;
-    font-family: 'Kantumruy Pro';font-size: 128px;
+    font-family: 'Kantumruy Pro';
+    font-size: 128px;
     height: 50px;
 }
 
-.icon{
-    height: 75px;
-}
+/* Webpage main */
