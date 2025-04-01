@@ -1,7 +1,21 @@
+/* General */
 body{
     background-color: rgb(252,252,252);
     margin: 0 auto;
 }
+
+a {
+    color: #0060B6;
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color:#0004DB; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
+/* General */
 
 /* Header Section */
 
@@ -10,7 +24,7 @@ header{
     flex-direction: row;
     height: 125px;
     width: 1500px;
-    background-color: #9C9EFF;
+    background-color: #0004DB;
     margin: 0 auto;
     align-items: center;
 }
@@ -30,6 +44,7 @@ header{
 }
 
 .new, .history, .help {
+    color: #FAF5FF;
     font-family: 'Kantumruy Pro';
     font-size: 60px;
     padding: 20px;
@@ -49,7 +64,7 @@ header{
 .NavBar {
     display: flex;
     align-items: center;
-    background: #9C9EFF;
+    background: #0004DB;
     color: white;
     width: 1080px;
     max-width: 1080px;
@@ -57,7 +72,7 @@ header{
     border-radius: 45px;
     font-size: 60px;
     padding: 0 20px; 
-    color: black;
+    color: white;
     overflow: hidden;
     caret-color: transparent;
 }
