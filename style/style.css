@@ -9,12 +9,12 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
+/*
 a:hover {
-    color:#0004DB; 
-    text-decoration:none; 
-    cursor:pointer;  
+    
 }
+*/
+
 /* General */
 
 /* Header Section */
@@ -61,23 +61,26 @@ header{
   height: 500px;
 }
 
-.NavBar {
-    display: flex;
-    align-items: center;
+.searchBar {
     background: #0004DB;
-    color: white;
     width: 1080px;
-    max-width: 1080px;
     height: 80px;
     border-radius: 45px;
-    font-size: 60px;
-    padding: 0 20px; 
-    color: white;
     overflow: hidden;
-    caret-color: transparent;
 }
-.NavBar:focus {
+.searchBar:focus {
     outline: 5px solid black; 
+}
+
+.searchInput {
+    height: inherit;
+    width: inherit;
+    border:none; 
+    background: transparent; 
+    outline: 0;
+    color: white;
+    font-size: 60px;
+    padding: 0 50px; 
 }
 
 .textLogo{
@@ -88,3 +91,26 @@ header{
 }
 
 /* Webpage main */
+
+/* Footer */
+footer{
+    position: absolute;
+    display: flex;
+    bottom: 0px;
+    height: 25px;
+    width: 1500px;
+    background-color: #000000;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+footer.hovered{
+    height: 125px;
+}
+
+footer > h3{
+    color: white;
+    font-family: 'Kantumruy Pro';
+}
+/* Footer */
