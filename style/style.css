@@ -112,5 +112,20 @@ footer > h3{
 
 /* Help page css */
 .helpContainer{
- nogng
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 694px;
+}
+
+.QNA{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 1350px;
+    height: 500px;
+    background-color: #0004DB;
+    border-radius: 70px;
 }
