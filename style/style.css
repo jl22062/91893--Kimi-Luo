@@ -37,16 +37,9 @@ header{
 
 a {
     color: #0060B6;
-    text-decoration: none;
+    text-decoration: underline;
     color: inherit;
 }
-
-/*
-a:hover {
-    
-}
-*/
-
 
 .container{
   display: flex;
@@ -75,7 +68,7 @@ a:hover {
     outline: 0;
     color: white;
     font-size: 60px;
-    padding: 0 50px; 
+    padding: 0 40px; 
 }
 
 .textLogo{
@@ -122,8 +115,8 @@ footer > h3{
 .QNA{
     display: flex;
     flex-direction: row;
-    
-    justify-content: left;
+    justify-content: center;
+    align-items: center;
     width: 1350px;
     height: 500px;
     background-color: #0004DB;
@@ -131,12 +124,21 @@ footer > h3{
 }
 
 .QNA h2{
-    padding-left: 30px;
+    color: white;
     font-size: 30px;
     font-family: 'Kantumruy Pro';
+    width: 50%;
+    padding: 50px;
 }
 
 .placeholder{
+    padding: 50px;
+    border-radius: 100px;
+    width: 50%;
     height: 400px;
+}
 
+.LaTex{
+    color: #11ff00;
+    text-decoration: none;
 }
