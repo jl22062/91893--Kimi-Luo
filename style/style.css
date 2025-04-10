@@ -122,10 +122,21 @@ footer > h3{
 .QNA{
     display: flex;
     flex-direction: row;
+    
     justify-content: left;
-    align-items: center;
     width: 1350px;
     height: 500px;
     background-color: #0004DB;
     border-radius: 70px;
+}
+
+.QNA h2{
+    padding-left: 30px;
+    font-size: 30px;
+    font-family: 'Kantumruy Pro';
+}
+
+.placeholder{
+    height: 400px;
+
 }
