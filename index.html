@@ -6,6 +6,7 @@
     <title>Alchimia</title>
     <link rel="stylesheet" href="style/style.css">
     <script src="script/script.js"></script>
+    <script type="module" src="script/balance.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Kantumruy Pro' rel='stylesheet'>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -21,7 +22,9 @@
         <h1 class="textLogo">Alchimia</h1>
         <div class="searchBar" onclick="inputBox()">
         </div>
+        <button onclick="balance()" title="Balance equation">Balance</button>
     </div>
+    <div id="result"></div>
     <footer>
         <h3 class="copyrightLable">©Copyright. All rights reserved.</h3>
     </footer>
