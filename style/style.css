@@ -4,6 +4,7 @@ body{
     margin: 0 auto;
 }
 
+/* Header and footers */
 header{
     display: flex;
     flex-direction: row;
@@ -41,38 +42,6 @@ a {
     color: inherit;
 }
 
-.container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-}
-
-.searchBar {
-    background: #0004DB;
-    width: 1080px;
-    height: 80px;
-    border-radius: 25px;
-    overflow: hidden;
-}
-.searchBar:focus {
-    outline: 5px solid black; 
-}
-
-/* not used anymore */
-
-
-.textLogo{
-    font-size: large;
-    font-family: 'Kantumruy Pro';
-    font-size: 128px;
-    height: 50px;
-}
-
-/* Webpage main */
-
-/* Footer */
 footer{
     position: absolute;
     display: flex;
@@ -94,51 +63,25 @@ footer > h3{
     color: white;
     font-family: 'Kantumruy Pro';
 }
-/* Footer */
 
-/* Help page css */
-.helpContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 694px;
+/* Index page */
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
 }
 
-.QNA{
-    display: flex;
-    width: 1350px;
-    height: 500px;
-    background-color: #0004DB;
-    border-radius: 70px;
+.searchBar {
+    background: #0004DB;
+    width: 1080px;
+    height: 80px;
+    border-radius: 25px;
+    overflow: hidden;
 }
-
-.QNAinfo{
-    width: 635px;
-    margin-top: 70px;
-    margin-left: 35px;
-    font-family: 'Kantumruy Pro';
-    font-size: 48px;
-    color: white;
-}
-
-.QNAimg{
-    height: 450px;
-    width: 650px;
-    background-color: #00006b;
-    border-radius: 50px;
-    margin-top: 25px;
-}
-
-.helpThumbnail{
-    border-radius: 50px;
-    height: 450px;
-    width: 650px;
-}
-
-.LaTex{
-    color: #11ff00;
-    text-decoration: none;
+.searchBar:focus {
+    outline: 5px solid black; 
 }
 
 .inputBox{
@@ -194,4 +137,60 @@ footer > h3{
 .searchBar button{
     height: 25px;
     width: 40px;
+}
+
+/* not used anymore */
+.textLogo{
+    font-size: large;
+    font-family: 'Kantumruy Pro';
+    font-size: 128px;
+    height: 50px;
+}
+
+/* Help page */
+.helpContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 694px;
+}
+
+.QNA{
+    display: flex;
+    width: 1350px;
+    height: 500px;
+    background-color: #0004DB;
+    border-radius: 70px;
+}
+
+.QNAinfo{
+    width: 635px;
+    margin-top: 70px;
+    margin-left: 35px;
+    font-family: 'Kantumruy Pro';
+    font-size: 48px;
+    color: white;
+}
+
+.QNAimg{
+    height: 450px;
+    width: 650px;
+    background-color: #00006b;
+    border-radius: 50px;
+    margin-top: 25px;
+    border-style: solid;
+    border-color: #ff0000;
+    border-width: 5px;
+}
+
+.helpThumbnail{
+    border-radius: 50px;
+    height: 450px;
+    width: 650px;
+}
+
+.LaTex{
+    color: #11ff00;
+    text-decoration: none;
 }
