@@ -114,31 +114,42 @@ footer > h3{
 
 .QNA{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     width: 1350px;
     height: 500px;
     background-color: #0004DB;
     border-radius: 70px;
 }
 
-.QNA h2{
-    color: white;
-    font-size: 30px;
+.QNAinfo{
+    width: 635px;
+    margin-top: 70px;
+    margin-left: 35px;
     font-family: 'Kantumruy Pro';
-    width: 50%;
-    padding: 50px;
+    font-size: 48px;
+    color: white;
 }
 
-.placeholder{
-    padding: 50px;
-    border-radius: 100px;
-    width: 50%;
-    height: 400px;
+.QNAimg{
+    height: 450px;
+    width: 650px;
+    background-color: #00006b;
+    border-radius: 50px;
+    margin-top: 25px;
+}
+
+.helpThumbnail{
+    border-radius: 50px;
+    height: 450px;
+    width: 650px;
 }
 
 .LaTex{
     color: #11ff00;
     text-decoration: none;
+}
+
+.inputBox{
+    width: 1000px;
+    height: 1000px;
+    background-color:#000000;
 }
