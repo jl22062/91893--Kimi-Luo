@@ -110,7 +110,6 @@ function balance() {
     } else {
         searchBar.innerHTML = `\\[invalid\\space formula\\]`;
     }
-
     MathJax.typesetPromise([searchBar]);
 }
 

@@ -16,8 +16,39 @@
         <div class="history"><a href="history.html">History</a></div>
         <div class="help"><a href="help.html">Help</a></div>
     </header>
+    <div class="historyContainer">
+        <div class="historyList">
+
+        </div>
+    </div>
     <footer>
         <h3 class="copyrightLable">©Copyright. All rights reserved.</h3>
     </footer>
 </body>
+<script>
+    function getFormulas() {
+        const match = document.cookie.match(new RegExp('(^| )formulas=([^;]+)'));
+        if (match) {
+            try {
+                return JSON.parse(match[2]);
+            } catch (e) {
+                return [];
+            }
+        }
+        return [];
+    }
+    
+    function loadHistory() {
+        const historyList = document.querySelector('.historyList');
+        const formulas = getFormulas();
+        if (formulas.length === 0) {
+            historyList.innerHTML = "<h1>No history yet.</h1>";
+        } else {
+            historyList.innerHTML = formulas.map(f => `<h1>\\[${f}\\]</h1>`).join("");
+            MathJax.typesetPromise([historyList]);
+        }
+    }
+    
+    window.onload = loadHistory;
+</script>
 </html>

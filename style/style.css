@@ -194,3 +194,19 @@ footer > h3{
     color: #11ff00;
     text-decoration: none;
 }
+
+/* History page */
+.historyContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 694px;
+}
+
+.historyList{
+    width: 1350px;
+    height: 650px;
+    background-color: #0004DB;
+    border-radius: 30px;
+}
