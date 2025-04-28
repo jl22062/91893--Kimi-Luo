@@ -30,7 +30,7 @@ function balance() {
     const searchBar = document.querySelector('.searchBar');
     const rawFormula = (searchBar.getAttribute('data-formula') || '').replace(/\s+/g, '');
 
-    // Reaction table, this is generated VIA AI
+    // Reaction table, this is hard coded without any libiraries. It only consisit of most of the reactions on metal and acid/base.
     const reactions = {
         // metal + HCl
         "Li+HCl": "LiCl+H_2",
@@ -104,10 +104,9 @@ function balance() {
     };
 
     const output = reactions[rawFormula];
-
     if (output) {
+        //This prints out the equation in the search bar.
         searchBar.innerHTML = `\\[${rawFormula} \\quad \\rightarrow \\quad ${output}\\]`;
-
         // Save to cookie here:
         let formulas = [];
         const match = document.cookie.match(new RegExp('(^| )formulas=([^;]+)'));
