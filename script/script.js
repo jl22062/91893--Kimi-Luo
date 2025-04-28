@@ -107,6 +107,20 @@ function balance() {
 
     if (output) {
         searchBar.innerHTML = `\\[${rawFormula} \\quad \\rightarrow \\quad ${output}\\]`;
+
+        // Save to cookie here:
+        let formulas = [];
+        const match = document.cookie.match(new RegExp('(^| )formulas=([^;]+)'));
+        if (match) {
+            try {
+                formulas = JSON.parse(match[2]);
+            } catch (e) {
+                formulas = [];
+            }
+        }
+        formulas.push(`${rawFormula}\\quad \\rightarrow \\quad ${output}`);
+
+        document.cookie = `formulas=${JSON.stringify(formulas)}; path=/; max-age=31536000`; // 1 year
     } else {
         searchBar.innerHTML = `\\[invalid\\space formula\\]`;
     }
