@@ -112,4 +112,3 @@ function balance() {
     }
     MathJax.typesetPromise([searchBar]);
 }
-

@@ -54,11 +54,6 @@ footer{
     justify-content: center;
 }
 
-footer.hovered{
-    height: 125px;
-}
-/* maybe add footer animation later who knows */
-
 footer > h3{
     color: white;
     font-family: 'Kantumruy Pro';
@@ -138,8 +133,6 @@ footer > h3{
     height: 25px;
     width: 40px;
 }
-
-/* not used anymore */
 .textLogo{
     font-size: large;
     font-family: 'Kantumruy Pro';
@@ -205,8 +198,20 @@ footer > h3{
 }
 
 .historyList{
+    display: flex;
     width: 1350px;
     height: 650px;
     background-color: #0004DB;
     border-radius: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* History page */
+.historyList > h1{
+    font-family: 'Kantumruy Pro';
+    outline: 0;
+    color: white;
+    font-size: 60px;
 }

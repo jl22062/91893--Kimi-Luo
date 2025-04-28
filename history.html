@@ -26,6 +26,7 @@
     </footer>
 </body>
 <script>
+    // This grabs the cookie saved from the index.html. I put it here because putting it in script.js doesn't work for some reason. I think its page specific so that might be why.
     function getFormulas() {
         const match = document.cookie.match(new RegExp('(^| )formulas=([^;]+)'));
         if (match) {
@@ -37,7 +38,7 @@
         }
         return [];
     }
-    
+    // This loads and displays the history.
     function loadHistory() {
         const historyList = document.querySelector('.historyList');
         const formulas = getFormulas();
@@ -48,7 +49,7 @@
             MathJax.typesetPromise([historyList]);
         }
     }
-    
+    // Self explanatory, on load, loads the history.
     window.onload = loadHistory;
 </script>
 </html>
